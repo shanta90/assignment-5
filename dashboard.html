@@ -6,6 +6,95 @@
     <title>Dashboard - Issue Tracker</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .bg-gradient-purple {
+            background: #4A00FF;
+        }
+        
+        .card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .input-focus {
+            transition: all 0.2s;
+        }
+        
+        .input-focus:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .btn-primary {
+            background: #4A00FF;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(74, 0, 255, 0.4), 0 10px 10px -5px rgba(74, 0, 255, 0.2);
+        }
+        
+        .tab-active {
+            background: #4A00FF;
+            color: white;
+            border: none;
+        }
+        
+        .tab-inactive {
+            background: white;
+            color: #6b7280;
+            border: 1px solid #e5e7eb;
+            transition: all 0.2s;
+        }
+        
+        .tab-inactive:hover {
+            background: #f3f4f6;
+            color: #374151;
+        }
+        
+        .card-open {
+            border-top: 4px solid #10b981;
+        }
+        
+        .card-closed {
+            border-top: 4px solid #8b5cf6;
+        }
+        
+        .badge-open {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        
+        .badge-closed {
+            background: #ede9fe;
+            color: #5b21b6;
+        }
+        
+        .badge-label {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        
+        .badge-priority {
+            background: #fce7f3;
+            color: #9f1239;
+        }
+        
+        .animate-pulse-slow {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        .modal-backdrop {
+            backdrop-filter: blur(4px);
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
     </head>
     <body class="bg-gray-50 min-h-screen">
     <!-- Navbar -->
