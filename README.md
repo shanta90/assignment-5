@@ -1,21 +1,19 @@
 # GitHub Issues Tracker
 
-একটি lightweight frontend project যেখানে GitHub-style issue list দেখা, filter করা এবং details modal-এ দেখা যায়।
+A lightweight frontend project to browse and manage GitHub-style issues with a clean, responsive dashboard UI.
 
-## প্রজেক্ট ওভারভিউ
+## Project Overview
 
-এই প্রজেক্টে একটি simple login page এবং একটি issue dashboard আছে।  
-Login করার পর remote API থেকে issues load হয়, status অনুযায়ী filter করা যায়, search করা যায়, এবং issue details modal-এ দেখা যায়।
+This project includes a simple login page and an issue dashboard.  
+After login, issues are loaded from a remote API. Users can filter by status, search by keyword, and view issue details in a modal.
 
-## স্ক্রিনশট
+## Screenshot
 
-```md
 ![GitHub Issues Tracker Preview](assets/project-preview.png)
-```
 
-চাইলে `GitHub Issues Tracker.fig` ফাইল থেকে design screen export করে ব্যবহার করতে পারেন।
+If needed, you can also export additional screens from `GitHub Issues Tracker.fig`.
 
-## মেইন টেকনোলজি
+## Main Technologies
 
 - HTML5
 - JavaScript (Vanilla ES6+)
@@ -25,10 +23,10 @@ Login করার পর remote API থেকে issues load হয়, status অ
 - REST API (`fetch`)
 - Browser `localStorage` (auth state)
 
-## মেইন ফিচারসমূহ
+## Main Features
 
 - Demo login system (default: `admin` / `admin123`)
-- API থেকে issue list fetch
+- Issue list fetched from API
 - Tab filter: All / Open / Closed
 - Real-time search (title, description, labels)
 - Issue statistics (total, open, closed)
@@ -37,33 +35,33 @@ Login করার পর remote API থেকে issues load হয়, status অ
 
 ## Dependencies
 
-এই প্রজেক্টে CDN-based dependency ব্যবহার করা হয়েছে (npm install দরকার নেই):
+This project uses CDN-based dependencies (no `npm install` required):
 
 - Tailwind CSS: [https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)
 - Font Awesome 6.4.0: [https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)
 - Google Font Inter: [https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap)
 
-## লোকাল মেশিনে রান করার গাইডলাইন
+## Run Locally
 
 ### Option 1: Directly run
 
-1. Repository clone করুন:
+1. Clone the repository:
    ```bash
    git clone https://github.com/shanta90/assignment-5.git
    ```
-2. Project folder-এ যান:
+2. Go to the project folder:
    ```bash
    cd assignment-5
    ```
-3. `index.html` browser-এ open করুন।
+3. Open `index.html` in your browser.
 
 ### Option 2: VS Code Live Server (recommended)
 
-1. VS Code-এ project open করুন।
-2. **Live Server** extension install করুন।
-3. `index.html`-এ right click করে **Open with Live Server** দিন।
+1. Open the project in VS Code.
+2. Install the **Live Server** extension.
+3. Right-click `index.html` and select **Open with Live Server**.
 
-## লাইভ লিংক ও অন্যান্য রিলেভেন্ট লিংক
+## Live and Relevant Links
 
 - Repository: [https://github.com/shanta90/assignment-5](https://github.com/shanta90/assignment-5)
 - API Base URL: [https://phi-lab-server.vercel.app/api/v1/lab](https://phi-lab-server.vercel.app/api/v1/lab)
